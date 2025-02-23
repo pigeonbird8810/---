@@ -111,7 +111,7 @@ for i in range (len(return_num)):
     elif return_num[i] == "u":
         code += "*"
     elif return_num[i] == "e":
-        code += "/"
+        code += "%"
     elif return_num[i] == "o":
         code += "="
     elif return_num[i] == "k":
