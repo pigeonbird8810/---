@@ -37,7 +37,8 @@ i = 0
 text = ""
 while i <= len(code_text)-1:
     print(f"{i}回目の復元")
-    if code_text[i] == "a"or"i"or"u"or"e"or"o":
+    print(code_text[i])
+    if (code_text[i] == "a")or(code_text[i] == "i")or(code_text[i] == "u")or(code_text[i] == "e")or(code_text[i] == "o"):
         if code_text[i] == "a":
             text += "あ"
         elif code_text[i] == "i":
@@ -50,9 +51,7 @@ while i <= len(code_text)-1:
             text += "お"
         i += 1 
     elif code_text[i] == "k":
-        print("k")
         if code_text[i+1] == "a":
-            print("a")
             text += "か"
         elif code_text[i+1] == "i":
             text += "き"
