@@ -48,8 +48,6 @@ def make_text2(num_text):
         st.session_state.text = ""
     st.session_state.text = ""
     while i <= len(num_text)-1:
-        print(f"{i}回目の復元")
-        print(num_text[i])
         if (num_text[i] == "a")or(num_text[i] == "i")or(num_text[i] == "u")or(num_text[i] == "e")or(num_text[i] == "o"):
             if num_text[i] == "a":
                 st.session_state.text += "あ"
@@ -168,7 +166,5 @@ def make_text2(num_text):
     return st.session_state.text
 if st.button(label="解読！"):
     text1 = make_text1(st.session_state.code)
-    print(text1)
     text2 = make_text2(text1)
-    print(text2)
     st.write(f"元の文字列は　「{text2}」")
