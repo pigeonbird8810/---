@@ -120,7 +120,7 @@ def make_code2(before_text):
         elif before_text[i] == "i":
             code += "-"
         elif before_text[i] == "u":
-            code += "*"
+            code += "#"
         elif before_text[i] == "e":
             code += "%"
         elif before_text[i] == "o":
@@ -163,4 +163,4 @@ if st.button(label="変換！"):
     code1 = make_code(st.session_state.num)
     code2 = make_code2(code1)
     code3 = make_code3(code2)
-    st.write(f"暗号は {code3}")
+    st.write(f"暗号は 「{code3}」")
